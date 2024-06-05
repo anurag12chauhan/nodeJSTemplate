@@ -7,6 +7,7 @@ let mongoose = require('mongoose');
 module.exports = {connect: connect};
 
 function connect() {
+    return true;
     webLog(`DB trying to connect from ${CONFIG.DB} on ` + new Date());
     const options = {
         keepAlive: 1,

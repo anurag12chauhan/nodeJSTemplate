@@ -4,9 +4,10 @@ class BLManager {
     async addMessages(requestBody) {
         if (!requestBody)
             throw "invalid request";
-        const message = new MessageModel(requestBody);
-        const addMessageRes = await message.save();
-        return addMessageRes;
+        console.log("New message received ", requestBody)
+        // const message = new MessageModel(requestBody);
+        // const addMessageRes = await message.save();
+        return requestBody;
     }
 
     async getMessages(requestBody) {
